@@ -1,0 +1,41 @@
+@use './root';
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'montserratextralight', sans-serif;
+  font-size: clamp(var(--fs-200), calc(var(--fs-200) + 1vw), var(--fs-400));
+}
+
+.secondary-fface,
+h1 {
+  font-family: 'cormorant_garamondbold_italic';
+  letter-spacing: 0.05em;
+}
+
+h2 {
+  font-family: 'montserratthin';
+  color: var(--pry-txt-clr);
+
+  .heading-span {
+    font-family: 'montserratmedium';
+    color: var(--accent-clr);
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      right: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--accent-clr);
+    }
+  }
+}
+
+.accent-fface {
+  font-family: 'sacramentoregular';
+}

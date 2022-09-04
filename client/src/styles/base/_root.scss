@@ -1,0 +1,11 @@
+@use '../abstracts' as a;
+
+:root {
+  @each $font-size, $value in a.$font-sizes {
+    --#{$font-size}: #{$value};
+  }
+
+  @each $color, $value in a.$colors {
+    --#{$color}: #{$value};
+  }
+}
