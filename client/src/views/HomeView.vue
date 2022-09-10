@@ -6,6 +6,9 @@
       <ShowcaseSection />
       <StorySection />
       <TeamSection />
+      <MenuSection />
+      <ReservationSection />
+      <TestimonialSection />
     </main>
   </div>
 </template>
@@ -17,6 +20,9 @@ import HeroSection from "@/components/HeroSection.vue";
 import ShowcaseSection from "@/components/ShowcaseSection.vue";
 import StorySection from "@/components/StorySection.vue";
 import TeamSection from "@/components/TeamSection.vue";
+import MenuSection from "@/components/MenuSection.vue";
+import ReservationSection from "@/components/ReservationSection.vue";
+import TestimonialSection from "@/components/TestimonialSection.vue";
 
 export default {
   name: "HomeView",
@@ -26,6 +32,9 @@ export default {
     ShowcaseSection,
     StorySection,
     TeamSection,
+    MenuSection,
+    ReservationSection,
+    TestimonialSection,
   },
 };
 </script>

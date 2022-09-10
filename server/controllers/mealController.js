@@ -7,12 +7,11 @@ const Meal = require("../models/mealModel");
 // @route Get /api/meals
 // @access Private
 const getRandomMeals = asyncHandler(async (req, res) => {
-  let amountOfMealsToGet = req.query.amount;
   const meals = await Meal.aggregate([
-    { $sample: { size: parseInt(amountOfMealsToGet) } },
+    { $sample: { size: 9 } },
   ]);
 
-  res.status(200).json(meals);
+  res.status(200).json(meals)
 });
 
 // @desc Set meal

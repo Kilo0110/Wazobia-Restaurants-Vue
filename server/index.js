@@ -1,37 +1,24 @@
-const express = require("express");
-const app = express();
-const dotenv = require("dotenv").config();
-const bodyParser = require('body-parser');
+const express = require('express');
 const colors = require('colors');
-const mongoose = require("mongoose");
-const cors = require("cors");
-const Meal = require("./models/mealModel");
-
+const dotenv = require('dotenv').config();
+const { errorHandler } = require('./middleware/errorMiddleware')
+const cors = require('cors');
+const corsOption = {
+  origin: '*'
+}
+const connectDB = require('./config/db')
 const PORT = process.env.PORT || 3000
 
-require("dotenv").config();
+connectDB()
 
-app.use(cors()); // to allow cross origin requests
-app.use(bodyParser.json()); // to convert the request into JSON
+const app = express()
 
-mongoose
-  .connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => console.log("MongoDB database Connected..."))
-  .catch((err) => console.log(err));
+app.use(cors(corsOption))
+app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
 
+app.use('/api/meals', require('./routes/mealRoutes'))
 
-app.get("/api/meals", async (req, res) => {
-  let amountOfMealsToGet = req.query.amount;
-  const meals = await Meal.aggregate([
-    { $sample: { size: 2 } },
-  ]);
+app.use(errorHandler)
 
-  res.status(200).json(meals);
-});
-
-app.listen(PORT, () => {
-  console.log(`App is listening at http://localhost:${PORT}`.cyan);
-});
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`.cyan))
