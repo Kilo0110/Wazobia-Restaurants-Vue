@@ -15,17 +15,7 @@
 
     <div class="menu">
       <div class="menu__type menu__type--breakfast full-width">
-        <ul class="menu__content d-flex flex-wrap">
-          <li class="menu__item d-flex flex-column">
-            <h3 class="menu__item-name"></h3>
-            <p class="menu__item-description"></p>
-            <span class="menu__item-price"></span>
-            <button class="link menu__item-order-btn d-flex align-center">
-              Add to cart
-              <i class="fa-solid fa-cart-plus"></i>
-            </button>
-          </li>
-        </ul>
+        <MealItem />
       </div>
     </div>
     <a href="./menu.html" class="link menu__see-more-btn"
@@ -35,8 +25,23 @@
 </template>
 
 <script>
+import MealItem from "@/components/MealItem.vue";
+
 export default {
   name: "MenuSection",
+  components: { MealItem },
+  /* methods: {
+    async addTodo(e) {
+      e.preventDefault();
+
+      this.name = "";
+      this.description = "";
+    },
+    async removeTodo(item, i) {
+      await axios.delete("/api/meals" + item._id);
+      this.meals.splice(i, 1);
+    },
+  }, */
 };
 </script>
 
