@@ -8,6 +8,7 @@ const corsOption = {
 }
 const connectDB = require('./config/db')
 const PORT = process.env.PORT || 3000
+const path = require('path')
 
 connectDB()
 
@@ -15,6 +16,7 @@ const app = express()
 
 app.use(cors(corsOption))
 app.use(express.json())
+app.use(express.static(path.join(__dirname, '../client/dist')));
 app.use(express.urlencoded({ extended: false }))
 
 app.use('/api/meals', require('./routes/mealRoutes'))
