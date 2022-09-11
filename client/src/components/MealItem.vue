@@ -35,7 +35,7 @@ export default {
       const meals = await (await axios.get(url)).data;
       this.meals = meals;
     } catch (error) {
-      throw new Error(error);
+      console.log(error);
     }
   },
 };
