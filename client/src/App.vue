@@ -1,16 +1,12 @@
 <template>
-  <HomeView />
+  <router-view></router-view>
 </template>
 
 <script>
 import axios from "axios";
-import HomeView from "@/views/HomeView.vue";
 
 export default {
   name: "App",
-  components: {
-    HomeView,
-  },
   data() {
     return {
       todos: [],

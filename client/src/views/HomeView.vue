@@ -10,19 +10,21 @@
       <ReservationSection />
       <TestimonialSection />
     </main>
+    <FooterSection />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import NavSection from "@/components/NavSection.vue";
-import HeroSection from "@/components/HeroSection.vue";
-import ShowcaseSection from "@/components/ShowcaseSection.vue";
-import StorySection from "@/components/StorySection.vue";
-import TeamSection from "@/components/TeamSection.vue";
-import MenuSection from "@/components/MenuSection.vue";
-import ReservationSection from "@/components/ReservationSection.vue";
-import TestimonialSection from "@/components/TestimonialSection.vue";
+import NavSection from "@/components/Base/NavSection.vue";
+import HeroSection from "@/components/HomeView/HeroSection.vue";
+import ShowcaseSection from "@/components/HomeView/ShowcaseSection.vue";
+import StorySection from "@/components/HomeView/StorySection.vue";
+import TeamSection from "@/components/HomeView/TeamSection.vue";
+import MenuSection from "@/components/HomeView/MenuSection.vue";
+import ReservationSection from "@/components/HomeView/ReservationSection.vue";
+import TestimonialSection from "@/components/HomeView/TestimonialSection.vue";
+import FooterSection from "@/components/Base/FooterSection.vue";
 
 export default {
   name: "HomeView",
@@ -35,6 +37,7 @@ export default {
     MenuSection,
     ReservationSection,
     TestimonialSection,
+    FooterSection,
   },
 };
 </script>

@@ -4,7 +4,7 @@
       <h2><span class="heading-span">Who</span> we are</h2>
       <img
         class="story__img"
-        src="../assets/img/catalogue/african-fish-dish-nigerian-food-260nw-1219952545.jpg"
+        src="@/assets/img/catalogue/african-fish-dish-nigerian-food-260nw-1219952545.jpg"
         alt=""
       />
       <div class="story__text-container d-flex flex-column">
@@ -23,7 +23,7 @@
       <h2><span class="heading-span">Why</span> we are</h2>
       <img
         class="story__img"
-        src="../assets/img/catalogue/african-fish-dish-nigerian-food-260nw-1219952545.jpg"
+        src="@/assets/img/catalogue/african-fish-dish-nigerian-food-260nw-1219952545.jpg"
         alt=""
       />
       <div class="story__text-container d-flex flex-column">
@@ -40,7 +40,7 @@
       <h2><span class="heading-span">Where</span> we are</h2>
       <img
         class="story__img"
-        src="../assets/img/catalogue/african-fish-dish-nigerian-food-260nw-1219952545.jpg"
+        src="@/assets/img/catalogue/african-fish-dish-nigerian-food-260nw-1219952545.jpg"
         alt=""
       />
       <div class="story__text-container d-flex flex-column">
