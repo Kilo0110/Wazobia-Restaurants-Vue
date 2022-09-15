@@ -4,67 +4,85 @@
       class="nav d-flex jfy-between align-center full-height full-width"
       id="nav"
     >
-      <a href="./index.html" class="nav__logo" id="nav__logo">Wazobia</a>
+      <router-link to="/" class="nav__logo" id="nav__logo">
+        Wazobia
+      </router-link>
       <div
         class="nav__extra-btn-container d-flex align-center"
         id="nav__extra-btn-container"
       >
-        <a href="./checkout.html" class="nav__extra-btn shop-btn" id="shop-btn">
+        <router-link
+          to="/checkout"
+          class="nav__extra-btn shop-btn"
+          id="shop-btn"
+        >
           <i class="fa-solid fa-cart-shopping"></i>
-        </a>
-        <a
-          href="./user-profile.html"
+        </router-link>
+        <router-link
+          to="./user-profile.html"
           class="nav__extra-btn log-in-btn"
           id="log-in-btn"
         >
           <i class="fa-solid fa-circle-user"></i>
-        </a>
+        </router-link>
       </div>
       <menu
         class="nav__menu-container d-flex flex-column jfy-evenly"
         id="nav__menu-container"
       >
         <li class="nav__menu__items">
-          <a href="./index.html" class="nav__menu__link d-flex jfy-end">
+          <router-link to="/" class="nav__menu__link d-flex jfy-end">
             <span class="nav__menu__link-name">Home</span>
             <i class="nav__menu__link-icon fa-solid fa-house-chimney"></i>
-          </a>
+          </router-link>
         </li>
         <li class="nav__menu__items">
-          <a href="./index.html#story" class="nav__menu__link d-flex jfy-end">
+          <router-link
+            to="/#story-section"
+            class="nav__menu__link d-flex jfy-end"
+          >
             <span class="nav__menu__link-name">Our Story</span>
             <i class="nav__menu__link-icon fa-solid fa-history"></i>
-          </a>
+          </router-link>
         </li>
         <li class="nav__menu__items">
-          <a href="./index.html#story" class="nav__menu__link d-flex jfy-end">
+          <router-link
+            to="/#team-section"
+            class="nav__menu__link d-flex jfy-end"
+          >
             <span class="nav__menu__link-name">Our Team</span>
             <i class="nav__menu__link-icon fa-solid fa-users"></i>
-          </a>
+          </router-link>
         </li>
         <li class="nav__menu__items">
-          <a href="./index.html#story" class="nav__menu__link d-flex jfy-end">
+          <router-link
+            to="/#menu-section"
+            class="nav__menu__link d-flex jfy-end"
+          >
             <span class="nav__menu__link-name">our menu</span>
             <i class="nav__menu__link-icon fa-solid fa-scroll"></i
-          ></a>
+          ></router-link>
         </li>
         <li class="nav__menu__items">
-          <a href="./index.html#story" class="nav__menu__link d-flex jfy-end">
+          <router-link
+            to="/#reservation-section"
+            class="nav__menu__link d-flex jfy-end"
+          >
             <span class="nav__menu__link-name">Make A Reservation</span>
             <i class="nav__menu__link-icon fa-solid fa-ticket"></i>
-          </a>
+          </router-link>
         </li>
         <li class="nav__menu__items">
-          <a href="./faq.html" class="nav__menu__link d-flex jfy-end">
+          <router-link to="/faq" class="nav__menu__link d-flex jfy-end">
             <span class="nav__menu__link-name">FAQs</span>
             <i class="nav__menu__link-icon fa-solid fa-circle-question"></i
-          ></a>
+          ></router-link>
         </li>
         <li class="nav__menu__items">
-          <a href="./contact.html" class="nav__menu__link d-flex jfy-end">
+          <router-link to="/contact" class="nav__menu__link d-flex jfy-end">
             <span class="nav__menu__link-name">contact us</span>
             <i class="nav__menu__link-icon fa-solid fa-phone"></i
-          ></a>
+          ></router-link>
         </li>
       </menu>
     </nav>
