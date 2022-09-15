@@ -6,11 +6,16 @@ const Meal = require("../models/mealModel");
 // @desc Get meals
 // @route Get /api/meals
 // @access Private
-const getRandomMeals = asyncHandler(async (req, res) => {
-  const meals = await Meal.aggregate([
-    { $sample: { size: 9 } },
-  ]);
+const getMeals = asyncHandler(async (req, res) => {
+  let meals
+  meals = await Meal.find({}).limit(9)
 
+  if (Object.keys(req.query).length !== 0) {
+    let amountToGet = req.query.amount
+    meals = await Meal.aggregate([
+      { $sample: { size: parseInt(amountToGet) } },
+    ]);
+  }
   res.status(200).json(meals)
 });
 
@@ -83,7 +88,7 @@ const deleteMeal = asyncHandler(async (req, res) => {
 });
 
 module.exports = {
-  getRandomMeals,
+  getMeals,
   setMeal,
   updateMeal,
   deleteMeal,

@@ -29,7 +29,7 @@ export default {
     };
   },
   async mounted() {
-    const url = process.env.VUE_APP_API_URL;
+    const url = process.env.VUE_APP_MEAL_API;
 
     try {
       const meals = await (await axios.get(url)).data;

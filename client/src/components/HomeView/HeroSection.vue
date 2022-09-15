@@ -15,7 +15,7 @@ export default {
   name: "HeroSection",
   data() {
     return {
-      logoImage: `../assets/logo.png`,
+      logoImage: `../../assets/logo.png`,
     };
   },
 };
@@ -24,7 +24,7 @@ export default {
 <style lang="scss">
 .hero-section {
   min-height: 90vh;
-  background: url("../assets/img/catalogue/nigerian-food-party-jollof-rice-260nw-1053746810.jpg")
+  background: url("@/assets/img/catalogue/nigerian-food-party-jollof-rice-260nw-1053746810.jpg")
       top center / cover,
     #1f1919;
   background-blend-mode: soft-light;

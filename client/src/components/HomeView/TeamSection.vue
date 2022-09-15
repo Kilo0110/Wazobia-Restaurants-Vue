@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import TeamMember from "@/components/TeamMember.vue";
+import TeamMember from "@/components/HomeView/TeamMember.vue";
 
 export default {
   name: "TeamSection",

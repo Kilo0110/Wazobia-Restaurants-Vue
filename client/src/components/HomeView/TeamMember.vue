@@ -2,7 +2,7 @@
   <a href="" :class="[isActive ? 'team-member--active' : '', 'team-member']">
     <div class="team-member__img-container">
       <img
-        src="../assets/img/team/male-chef-1.jpg"
+        src="@/assets/img/team/male-chef-1.jpg"
         alt=""
         class="team-member__img"
       />

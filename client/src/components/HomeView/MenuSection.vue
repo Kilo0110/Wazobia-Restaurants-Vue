@@ -18,14 +18,14 @@
         <MealItem />
       </div>
     </div>
-    <a href="./menu.html" class="link menu__see-more-btn"
+    <a href="/menu" class="link menu__see-more-btn"
       >View Full Menu <i>&#8674;</i></a
     >
   </section>
 </template>
 
 <script>
-import MealItem from "@/components/MealItem.vue";
+import MealItem from "@/components/HomeView/MealItem.vue";
 
 export default {
   name: "MenuSection",
