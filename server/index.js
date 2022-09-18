@@ -21,6 +21,8 @@ app.use(express.urlencoded({ extended: false }))
 
 app.use('/api/meals', require('./routes/mealRoutes'))
 
+app.use('/api/testimonials', require('./routes/testimonialRoutes'))
+
 app.use(errorHandler)
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`.cyan))
