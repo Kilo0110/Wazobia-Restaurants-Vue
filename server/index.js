@@ -4,10 +4,11 @@ const dotenv = require('dotenv').config();
 const { errorHandler } = require('./middleware/errorMiddleware')
 const cors = require('cors');
 const corsOption = {
-  origin: '*'
+  origin: 'http://localhost:8080',
+  credentials: true,
 }
 const connectDB = require('./config/db')
-const PORT = process.env.PORT || 3000
+const PORT = process.env.SERVER_PORT || 5000
 const path = require('path')
 
 connectDB()
@@ -16,12 +17,12 @@ const app = express()
 
 app.use(cors(corsOption))
 app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
 app.use(express.static(path.join(__dirname, '../client/dist')));
-app.use(express.urlencoded({ extended: false }))
 
 app.use('/api/meals', require('./routes/mealRoutes'))
-
 app.use('/api/testimonials', require('./routes/testimonialRoutes'))
+app.use('/api/users', require('./routes/userRoutes'));
 
 app.use(errorHandler)
 
