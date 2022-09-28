@@ -3,13 +3,15 @@ const upload = require("../middleware/upload");
 
 const {
   getTestimonials,
-  // setMeal,
-  // updateMeal,
-  // deleteMeal,
+  setTestimonial,
+  updateTestimonial,
+  deleteTestimonial,
 } = require("../controllers/testimonialControllers");
 
-router.route("/").get(getTestimonials);
-// router.post("/", upload.array("mealPictures", 3), setMeal);
-// router.route("/:id").put(updateMeal).delete(deleteMeal);
+const { protect } = require('../middleware/authMiddleware')
+
+router.route("/").get(protect, getTestimonials);
+router.post("/", protect, upload.array("mealPictures", 3), setTestimonial);
+router.route("/:id").put(protect, updateTestimonial,).delete(protect, deleteTestimonial);
 
 module.exports = router;
