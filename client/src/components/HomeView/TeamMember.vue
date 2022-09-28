@@ -25,7 +25,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .team-member {
   min-height: 150px;
   text-decoration: none;

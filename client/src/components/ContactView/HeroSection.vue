@@ -17,7 +17,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .hero-section--inner-page {
   background: url("@/assets/img/catalogue/african-national-food-dish-grilled-260nw-1467817790.jpg"),
     rgb(2, 20, 15);

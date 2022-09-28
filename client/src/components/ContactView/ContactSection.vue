@@ -113,7 +113,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .contact {
   display: block;
   padding: 2em 3em;
