@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { HTTP } from "@/helpers/http-common.js";
+import axios from "axios";
 
 export default {
   name: "MealItems",
@@ -28,7 +28,7 @@ export default {
 
     try {
       console.log(url);
-      const meals = await (await HTTP.get(`meals?amount=5`)).data;
+      const meals = await (await axios.get(`/meals?amount=5`)).data;
       this.meals = meals;
     } catch (error) {
       console.log(error);
@@ -37,7 +37,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .meal {
   display: flex;
   flex-direction: column;
