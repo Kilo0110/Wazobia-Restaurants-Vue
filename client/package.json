@@ -10,10 +10,19 @@
   "dependencies": {
     "axios": "^0.27.2",
     "core-js": "^3.8.3",
+    "mitt": "^3.0.0",
+    "qs": "^6.11.0",
     "register-service-worker": "^1.7.2",
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^11.4.33",
+    "swiper": "^8.4.2",
     "vue": "^3.2.13",
+    "vue-cookies": "^1.8.1",
+    "vue-jwt-decode": "^0.1.0",
     "vue-router": "^4.0.3",
-    "vuex": "^4.0.0"
+    "vue3-use-hooks": "^0.1.8",
+    "vuex": "^4.0.0",
+    "vuex-persistedstate": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

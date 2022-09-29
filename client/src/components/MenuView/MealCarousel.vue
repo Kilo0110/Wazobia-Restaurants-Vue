@@ -30,7 +30,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .meal-carousel-container {
   width: 100%;
   margin: auto;

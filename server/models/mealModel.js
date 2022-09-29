@@ -7,7 +7,7 @@ const Meal = mongoose.Schema(
       required: [true, "Please add a meal name"],
     },
     price: {
-      type: Number,
+      type: String,
       required: [true, "Please add a meal price"],
     },
     description: {

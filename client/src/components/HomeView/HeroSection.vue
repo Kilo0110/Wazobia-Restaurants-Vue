@@ -1,6 +1,6 @@
 <template>
   <section
-    class="section hero-section d-flex flex-column place-center text-center full-viewport-width"
+    class="section hero-section d-flex flex-column place-center text-center fv-width"
   >
     <p class="accent-fface hero-section__welcome-text">Welcome to</p>
     <h1 class="secondary-fface hero-section__name-text">Wazobia Restaurant</h1>
@@ -21,7 +21,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .hero-section {
   min-height: 90vh;
   background: url("@/assets/img/catalogue/nigerian-food-party-jollof-rice-260nw-1053746810.jpg")

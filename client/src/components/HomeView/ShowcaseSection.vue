@@ -34,7 +34,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .showcase-section {
   gap: 1.5em;
   padding: 3.5em 3.5em;

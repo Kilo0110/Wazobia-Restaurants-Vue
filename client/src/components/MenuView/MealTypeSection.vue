@@ -22,7 +22,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .meal-type-section {
   gap: 1em;
   width: 90%;

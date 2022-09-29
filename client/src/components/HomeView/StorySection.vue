@@ -64,7 +64,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .story-section {
   background: var(--sec-txt-clr-inv);
   box-shadow: 0 0 5px 5px rgba(#000000, 0.2);

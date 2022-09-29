@@ -14,7 +14,7 @@
     </ul>
 
     <div class="menu">
-      <div class="menu__type menu__type--breakfast full-width">
+      <div class="menu__type menu__type--breakfast f-width">
         <MealItem />
       </div>
     </div>
@@ -45,7 +45,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .menu-section {
   background: var(--sec-txt-clr-inv);
   box-shadow: 0 0 5px 5px rgba(#000000, 0.2);

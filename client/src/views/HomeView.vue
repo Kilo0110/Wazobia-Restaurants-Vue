@@ -1,17 +1,17 @@
 <template>
-  <div>
-    <NavSection />
-    <main class="main">
-      <HeroSection />
-      <ShowcaseSection />
-      <StorySection />
-      <TeamSection />
-      <MenuSection />
-      <ReservationSection />
-      <TestimonialSection />
-    </main>
-    <FooterSection />
-  </div>
+  <!-- eslint-disable-next-line vue/no-multiple-template-root -->
+  <NavSection />
+  <main class="main">
+    <HeroSection />
+    <ShowcaseSection />
+    <StorySection />
+    <TeamSection />
+    <MenuSection />
+    <ReservationSection />
+    <TestimonialSection />
+  </main>
+  <!-- eslint-disable-next-line vue/no-multiple-template-root -->
+  <FooterSection />
 </template>
 
 <script>
@@ -41,3 +41,7 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+@use "@/styles/abstracts";
+</style>

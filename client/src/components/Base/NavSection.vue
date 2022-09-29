@@ -1,9 +1,6 @@
 <template>
-  <header class="header d-flex jfy-center full-viewport-width" id="header">
-    <nav
-      class="nav d-flex jfy-between align-center full-height full-width"
-      id="nav"
-    >
+  <header class="header d-flex jfy-center fv-width" id="header">
+    <nav class="nav d-flex jfy-between align-center f-height f-width" id="nav">
       <router-link to="/" class="nav__logo" id="nav__logo">
         Wazobia
       </router-link>
@@ -95,7 +92,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use "@/styles/abstracts" as a;
 
 .header {
